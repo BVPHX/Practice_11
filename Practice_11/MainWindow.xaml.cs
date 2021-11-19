@@ -28,7 +28,7 @@ namespace Practice_11
 
         private void ResultOutput_Click(object sender, RoutedEventArgs e)
         {
-            Regex regex = new Regex(@"a\w\w\wb");
+            Regex regex = new Regex(@"ab{0,3}a");
             string rawText = "aa aba abba abbba abca abea";
             MatchCollection match = regex.Matches(rawText);
             object[] mas = new object[match.Count];
